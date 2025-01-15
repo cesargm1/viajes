@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Viajes</title>
+	</head>
+	<body class="body">
+		<header class="body__header">
+			<section class="body__section">
+				<h1 class="section__h1">Viajes para compartir</h1>
+			</section>
+
+			<section class="body__header">
+				<nav class="header__nav">
+					<ul class="nav__ul">
+						<li class="ul__li">
+							<a class="li__a" href="Enlace">enlace1</a>
+						</li>
+
+						<li class="ul__li">
+							<a class="li__a" href="Enlace">enlace2</a>
+						</li>
+
+						<li class="ul__li">
+							<a class="li__a" href="Enlace">enlace1</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+		</header>
+
+		<main class="body__main">
+			<h2 class="main__h2">Galeria de personas viajando</h2>
+			<section class="main__section main__section--galerry">
+				<img
+					class="section__img"
+					src="/img/avion.jpeg"
+					alt="avion"
+					title="avion"
+				/>
+
+				<img
+					class="section__img"
+					src="/img/avion.jpeg"
+					alt="avion"
+					title="avion"
+				/>
+
+				<img
+					class="section__img"
+					src="/img/avion.jpeg"
+					alt="avion"
+					title="avion"
+				/>
+
+				<img
+					class="section__img"
+					src="/img/avion.jpeg"
+					alt="avion"
+					title="avion"
+				/>
+			</section>
+			<section class="main__section">Seccion 2</section>
+		</main>
+
+		<footer class="body__footer">
+			<ul class="footer__ul">
+				<li class="footer__li">
+					<a class="li__a" href="#enlace3">Enlace 3</a>
+				</li>
+
+				<li class="footer__li">
+					<a class="li__a" href="#enlace3">Enlace 3</a>
+				</li>
+
+				<li class="footer__li">
+					<a class="li__a" href="#enlace3">Enlace 3</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>
+
+<style>
+	* {
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+	}
+
+	.body {
+		display: flex;
+		flex-direction: column;
+		min-height: 100dvh;
+	}
+
+	.body__header {
+		display: flex;
+		align-items: center;
+		background-color: rgb(209, 200, 200);
+		padding: 1em;
+	}
+
+	.body__section {
+		display: flex;
+		width: 100%;
+		flex: 1;
+	}
+
+	.header__nav {
+		width: 100%;
+	}
+
+	.nav__ul {
+		display: flex;
+		gap: 0.5em;
+	}
+
+	.ul__li {
+		list-style: none;
+	}
+
+	.li__a {
+		text-decoration: none;
+	}
+
+	.body__main {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		background-color: burlywood;
+	}
+
+	.main__section--galerry {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.section__img {
+		width: 300px;
+		max-width: 100%;
+		object-fit: cover;
+		gap: 1em;
+	}
+
+	.body__footer {
+		background-color: black;
+		padding: 1em;
+	}
+</style>
